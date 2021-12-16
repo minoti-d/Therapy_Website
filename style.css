@@ -1,0 +1,326 @@
+@import url("http://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Poppins-Regular";
+}
+
+section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: #002266;
+}
+
+.caption {
+  /* opacity: 0.7; */
+  /* width: 1258px; */
+  position: fixed;
+  width: 1000px;
+  height: 90%;
+  background: linear-gradient(-68deg, rgb(79, 197, 253), rgb(61, 55, 239) 77%);
+  overflow: hidden;
+  display: flex;
+  border-radius: 10px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0px 130px 17px 95px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.205),
+    -3px -3px 7px rgba(255, 255, 255, 0.15);
+  transition-duration: 0.3s;
+}
+
+.caption:hover {
+  transform: translateY(-15px);
+  opacity: 1;
+
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.205),
+    inset -3px -3px 7px rgba(255, 255, 255, 0.15);
+}
+
+.caption:hover > .main .content a {
+  transform: translateY(-15px);
+  transition-duration: 0.3s;
+}
+.navbar {
+  position: relative;
+  min-height: 52px;
+  border: 1px solid transparent;
+  display: block;
+  margin-left: -20px;
+  margin-top: 37px;
+}
+
+.header {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* 
+.footer {
+  margin-bottom: 5px;
+  bottom: 5px;
+} */
+
+.container > .navbar-header {
+  margin-right: 0;
+  margin-right: 0;
+}
+
+.navbar-header {
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.navbar-header .logo {
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+}
+
+.navbar-header .logo i:hover {
+  background-color: #000000b0;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(66, 36, 235, 0.5);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.navbar-header .logo::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  top: -9px;
+  left: -9px;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2),
+    inset -3px -3px 4px rgba(255, 255, 255, 0.28);
+}
+
+.nav {
+  padding-left: 41px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+.nav > li {
+  float: left;
+  position: relative;
+  display: block;
+}
+
+.navbar-nav > li {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  padding-top: 15px;
+  border-radius: 15px;
+  padding-bottom: 15px;
+  transform: 0.3s;
+  line-height: 20px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+li:hover {
+  /* background-color: #000000b0; */
+  background-color: white;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(66, 36, 235, 0.5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 900;
+}
+
+.Contact {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -24rem;
+  top: -18px;
+}
+.Contact li:hover {
+  text-shadow: none;
+}
+
+.Contact li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.Contact li .fa {
+  position: relative;
+  top: 0px;
+  display: inline-block;
+  line-height: 1;
+  color: #fff;
+  left: -14px;
+  font-size: 18px;
+}
+
+.Contact .sign a {
+  position: relative;
+  display: block;
+  padding: 7px 30px;
+  border-radius: 30px;
+  z-index: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #ffe45f, #ffca2b);
+  color: #0052d4;
+  /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.08),
+    -2px -2px 5px rgba(255, 255, 255, 0.16); */
+  box-shadow: 10px 10px 64px #003fa3, -32px -32px 64px #0065ff;
+  border: 8px solid #4662ef;
+  font-weight: bold;
+}
+
+.Contact .sign a:hover {
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.08),
+    inset -3px -3px 5px rgba(255, 255, 255, 0.16);
+  /* box-shadow: inset 2px 2px 64px #003fa3, inset -32px -32px 64px #0065ff; */
+}
+
+.Contact .sign:before {
+  position: absolute;
+  content: "";
+  border-radius: 50px;
+  background: linear-gradient(160deg, #2b44bc 0%, #4a66f7 100%);
+  padding: 38px 80px;
+  top: 2px;
+  right: 2px;
+}
+
+.main {
+  width: 100%;
+  height: 50vh;
+  margin-top: 5vh;
+  display: flex;
+}
+
+.main .content {
+  width: 42%;
+  height: 100px;
+  margin-left: 45px;
+  margin-top: 5px;
+  color: #888;
+}
+
+.main .content h1 {
+  font-size: 34px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+
+  margin-bottom: 10px;
+}
+
+.main .content h1 span {
+  color: #fde672;
+  font-family: "Poppins", sans-serif;
+}
+
+.main .content a {
+  position: absolute;
+  color: #fde672;
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  margin: 26px 0px;
+}
+
+.main .content a:hover {
+  background-color: #17146f;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.main .content p {
+  font-size: 15px;
+  color: #cfd7fb;
+  font-family: "Poppins", sans-serif;
+  line-height: 26px;
+}
+
+.main .image {
+  /* width: 50%;
+  height: 100%; */
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  /* margin-left: 30px; */
+  margin-right: 20px;
+}
+
+.footer {
+  height: 50px;
+  bottom: 10px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  padding-top: 4px;
+}
+
+.footer .media .start {
+  position: relative;
+  display: block;
+  padding: 7px 30px;
+  border-radius: 30px;
+  z-index: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #ff634c, #e3523e);
+  color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.08),
+    -3px -3px 5px rgba(255, 255, 255, 0.16);
+  /* border: 8px solid #4662ef; */
+  /* border: 8px solid #ffd33d; */
+  border: 8px solid #2b44bc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer .media .start:hover {
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.08),
+    inset -3px -3px 5px rgba(255, 255, 255, 0.16);
+  border: 10px solid #2b44bc;
+}
